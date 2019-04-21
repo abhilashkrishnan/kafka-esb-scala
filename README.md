@@ -13,7 +13,7 @@ In our example we are performing Event Modelling through Apache Kafka as ESB.
 
 The first step in the event modellling is to express the event in English in the following form:
 
-####Subject-verb-direct object
+#### Subject-verb-direct object
 
 For this example we are modelling the event customer consults stock price
 
@@ -67,9 +67,9 @@ Minimal zookeeper.properties file entries are,
 ```
 
 2. Start Kafka broker instance running on localhost at port 9093 with the following command:
-
-  #### kafka-server-start.sh server.properties
-
+```
+    kafka-server-start.sh server.properties
+```
 Minimal server.properties file entries are,
 
 ```
@@ -81,13 +81,13 @@ Minimal server.properties file entries are,
 ```
 
 3. Start Kafka Producer console
-
-  #### kafka-console-producer.sh –broker-list localhost:9093 –topic input-topic
-
+```
+    kafka-console-producer.sh –broker-list localhost:9093 –topic input-topic
+```
 4. Start Kafka Consumer console
-
-  #### kafka-console-consumer.bat –bootstrap-server localhost:9093 –topic output-topic
-
+```
+    kafka-console-consumer.bat –bootstrap-server localhost:9093 –topic output-topic
+```
 5. Run the scala application.
 
 6. Send the following JSON message from Kafka Producer console opened in Step 3.
