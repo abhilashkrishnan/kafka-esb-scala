@@ -86,7 +86,7 @@ Minimal server.properties file entries are,
 ```
 4. Start Kafka Consumer console
 ```
-   kafka-console-consumer.bat –bootstrap-server localhost:9093 –topic output-topic
+   kafka-console-consumer.sh –bootstrap-server localhost:9093 –topic output-topic
 ```
 5. Run the Scala application.
 
