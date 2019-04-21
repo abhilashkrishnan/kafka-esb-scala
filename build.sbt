@@ -1,4 +1,4 @@
-name := "stock-price-kafka"
+name := "kafka-esb-scala"
 
 version := "0.1"
 
