@@ -25,8 +25,8 @@ class Writer(servers: String, topic: String) extends Producer {
   }
 
   override def write(message: String): Unit = {
-    println("Write Message: " + message + " to topic " + topic)
     val record = new ProducerRecord[String, String](topic, message)
     producer.send(record)
+    println("Write Message: " + message + " to topic " + topic)
   }
 }
