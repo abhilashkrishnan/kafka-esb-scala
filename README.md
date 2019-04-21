@@ -17,9 +17,9 @@ The first step in the event modellling is to express the event in English in the
 
 For this example we are modelling the event **customer consults stock price**.
 
-* The subject in the sentence is customer
-* The verb in the sentence is consults
-* The direct object in the sentence is stock price
+* The subject in the sentence is **customer**.
+* The verb in the sentence is **consults**.
+* The direct object in the sentence is **stock price**.
 
 We represent our message in JSON format.
 
