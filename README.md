@@ -92,4 +92,19 @@ Minimal server.properties file entries are,
 
 6. Send the following JSON message from Kafka Producer console opened in Step 3.
 
+```
+{ "event": "CUSTOMER_CONSULTS_STOCKPRICE",
+  "customer": {
+    "id": "13548310",
+    "name": "Abhilash, Krishnan",
+    "ipAddress": "185.86.151.11"
+  },
+  "stock": {
+    "name": "GOOG",
+    "price": "USD"
+  },
+    "timestamp": "2018-09-28T08:08:14Z"
+}
+```
+
 7. You will be able to see the JSON message in the Kafka Consumer console opened in Step 4.
