@@ -59,7 +59,7 @@ Minimal zookeeper.properties file entries are,
 
 ```
   #the directory where the snapshot is stored.
-  dataDir=C:/kafka/zookeeper
+  dataDir=/kafka/zookeeper
   #the port at which the clients will connect
   clientPort=2181
   #disable the per-ip limit on the number of connections since this is a non-production config
@@ -76,7 +76,7 @@ Minimal server.properties file entries are,
   broker.id=1
   port=9093
   zookeeper.connect=localhost:2181
-  log.dirs=C:/kafka/server-1-logs
+  log.dirs=/tmp/kafka/server-1-logs
   offsets.topic.replication.factor=1
 ```
 
