@@ -52,9 +52,9 @@ The process flow can be depicted as:
 To run this application do the following steps:
 
 1. Start Zookeeper with the following command:
-
-  #### zookeeper-server.sh zookeeper.properties
-
+```
+   zookeeper-server.sh zookeeper.properties
+```
 Minimal zookeeper.properties file entries are,
 
 ```
@@ -68,7 +68,7 @@ Minimal zookeeper.properties file entries are,
 
 2. Start Kafka broker instance running on localhost at port 9093 with the following command:
 ```
-    kafka-server-start.sh server.properties
+   kafka-server-start.sh server.properties
 ```
 Minimal server.properties file entries are,
 
@@ -82,11 +82,11 @@ Minimal server.properties file entries are,
 
 3. Start Kafka Producer console
 ```
-    kafka-console-producer.sh –broker-list localhost:9093 –topic input-topic
+   kafka-console-producer.sh –broker-list localhost:9093 –topic input-topic
 ```
 4. Start Kafka Consumer console
 ```
-    kafka-console-consumer.bat –bootstrap-server localhost:9093 –topic output-topic
+   kafka-console-consumer.bat –bootstrap-server localhost:9093 –topic output-topic
 ```
 5. Run the scala application.
 
