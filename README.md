@@ -88,7 +88,7 @@ Minimal server.properties file entries are,
 ```
    kafka-console-consumer.bat –bootstrap-server localhost:9093 –topic output-topic
 ```
-5. Run the scala application.
+5. Run the Scala application.
 
 6. Send the following JSON message from Kafka Producer console opened in Step 3.
 
