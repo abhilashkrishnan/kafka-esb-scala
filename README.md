@@ -44,10 +44,11 @@ In our example we have Readers or Consumers, Writers or Producers and a Processi
 
 The process flow can be depicted as:
 
-* Kafka Console Producer -> input-topic
+* Kafka Producer Console -> input-topic
 * Reader or Consumer <- input-topic
+* Process the received message
 * Writer or Producer -> output-topic
-* Kafka Console Consumer <- output-topic
+* Kafka Consumer Console <- output-topic
 
 To run this application do the following steps:
 
